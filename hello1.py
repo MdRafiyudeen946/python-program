@@ -20,7 +20,7 @@ flow.register(project_name="project123")
 flow.storage = GitHub(
         repo="python-program",
         path="hello1.py",
-	access_token_secret="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"
+	access_token_secret="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"
 )
 
 
