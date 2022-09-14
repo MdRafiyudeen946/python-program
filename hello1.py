@@ -20,6 +20,6 @@ with Flow("hello-flow111",schedule=schedule) as flow:
 flow.storage = GitHub(
         repo="python-program",
         path="hello1.py",
-	access_token_secret="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"
+	access_token_secret="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"
 )
 
