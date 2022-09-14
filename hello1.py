@@ -11,7 +11,7 @@ def hello_task():
 
 schedule = IntervalSchedule(interval=timedelta(minutes=1))
 
-with Flow("hello-flow",schedule=schedule) as flow:
+with Flow("hello-flow1",schedule=schedule) as flow:
     hello_task()
 
 flow.register(project_name="Project")
