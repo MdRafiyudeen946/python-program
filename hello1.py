@@ -9,11 +9,10 @@ def hello_task():
     logger = prefect.context.get("logger")
     logger.info("Hello world!")
 
-#schedule = IntervalSchedule(interval=timedelta(minutes=1))
+schedule = IntervalSchedule(interval=timedelta(minutes=1))
+with Flow("hello-flow111",schedule=schedule) as flow:
 
-#with Flow("hello-flow111",schedule=schedule) as flow:
-
-with Flow("hello-flow111") as flow:
+#with Flow("hello-flow111") as flow:
     hello_task()
 
 #flow.register(project_name="project123")
@@ -21,6 +20,6 @@ with Flow("hello-flow111") as flow:
 flow.storage = GitHub(
         repo="python-program",
         path="hello1.py",
-	access_token_secret="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"
+	access_token_secret="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"
 )
 
