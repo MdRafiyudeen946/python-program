@@ -7,7 +7,7 @@ from prefect.storage import GitHub
 @task
 def hello_task():
     logger = prefect.context.get("logger")
-    logger.info("Hello world!")
+    logger.info("Hello world!!!")
 
 schedule = IntervalSchedule(interval=timedelta(minutes=1))
 with Flow("hello-flow11",schedule=schedule) as flow:
